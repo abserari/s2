@@ -1,4 +1,10 @@
 {
     "version": 2,
-    "name": "s2"
+    "name": "s2",
+    "builds": [
+        { "src": "/*.go", "use": "@now/go" }
+    ],
+    "routes": [
+        {"src": "/api/v1/s2/date", "dest": "api/s2.go"}
+    ]
 }
